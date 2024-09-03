@@ -5,6 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="CL Magno I.T. Solutions or clmits. At our I.T. solutions and training services company, we believe that technology is only as powerful as the people who use it. That's why we offer comprehensive training services alongside our cutting-edge I.T. solutions. Our team of experts is dedicated to empowering businesses to achieve their goals through innovative technology and the skills to use it effectively. We pride ourselves on our commitment to customer satisfaction and our ability to deliver customized solutions that meet the unique needs of each client. " />
         <meta name="author" content="clmits or CL Magno I.T. Solutions" />
+            <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://clmits.com">
+        <meta property="og:title" content="CL Magno I.T. Solutons">
+        <meta property="og:description" content="CL Magno I.T. Solutions or clmits. At our I.T. solutions and training services company, we believe that technology is only as powerful as the people who use it. That's why we offer comprehensive training services alongside our cutting-edge I.T. solutions. Our team of experts is dedicated to empowering businesses to achieve their goals through innovative technology and the skills to use it effectively. We pride ourselves on our commitment to customer satisfaction and our ability to deliver customized solutions that meet the unique needs of each client.">
+        <meta property="og:image" content="https://clmits.com/assets/logo.jpg">
         <title>CL MAGNO I.T. SOLUTIONS</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -15,39 +21,20 @@
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7050275682276297"
      crossorigin="anonymous"></script>
      <meta name="google-adsense-account" content="ca-pub-7050275682276297">
+    
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">CL Magno I.T. Solutions</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <!-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> -->
-                            <!-- <li class="nav-item"><a class="nav-link" href="about.html" disabled>About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                            <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                            <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
-                                    <li><a class="dropdown-item" href="blog-home.html">Blog Home</a></li>
-                                    <li><a class="dropdown-item" href="blog-post.html">Blog Post</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
-                                    <li><a class="dropdown-item" href="portfolio-overview.html">Portfolio Overview</a></li>
-                                    <li><a class="dropdown-item" href="portfolio-item.html">Portfolio Item</a></li>
-                                </ul>
-                            </li> -->
-                        <!-- </ul> -->
-                    </div>
-                </div>
-            </nav>
+            <div id="navbar"></div>
+        <script>
+            fetch('navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar').innerHTML = html;
+            });
+        </script>
+
             <!-- Header-->
             <header class="bg-dark py-5">
                 <div class="container px-5">
