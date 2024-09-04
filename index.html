@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+
         <!-- HTML Meta Tags -->
         <title>CL Magno I.T. Solutons | Cutting Edge IT Solutions!</title>
         <meta name="description" content="CL Magno I.T. Solutions or clmits. At our I.T. solutions and training services company, we believe that technology is only as powerful as the people who use it." />
@@ -24,31 +26,27 @@
         <meta name="twitter:title" content="CL Magno I.T. Solutons" />
         <meta name="twitter:description" content="CL Magno I.T. Solutions or clmits. At our I.T. solutions and training services company, we believe that technology is only as powerful as the people who use it." />
         <meta name="twitter:image" content="https://clmits.com/assets/Logo.jpg" />
-
-<!-- Meta Tags Generated via https://heymeta.com -->
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7050275682276297"
-     crossorigin="anonymous"></script>
-     <meta name="google-adsense-account" content="ca-pub-7050275682276297">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7050275682276297"crossorigin="anonymous"></script>
+        <meta name="google-adsense-account" content="ca-pub-7050275682276297">
     
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
             <!-- Navigation-->
             <div id="navbar"></div>
-        <script>
-            fetch('navbar.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('navbar').innerHTML = html;
-            });
-        </script>
-
+            <script>
+                fetch('navbar.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('navbar').innerHTML = html;
+                });
+            </script>
             <!-- Header-->
             <header class="bg-dark py-5">
                 <div class="container px-5">
@@ -334,20 +332,15 @@
             </section>
         </main>
         <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2024</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <div id="footer">
+            <script>
+                fetch('footer.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('footer').innerHTML = html;
+                });
+            </script>
+        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
